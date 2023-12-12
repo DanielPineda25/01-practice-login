@@ -1,0 +1,20 @@
+<div class="container">
+
+  <shared-login *ngIf="showLogin"
+  (onUser)="userInput($event)"
+  (onPass)="passInput($event)"
+  (submit)="userValidation($event)"
+  [ngClass]="{ 'form-control alert alert-danger': errorMsj }"
+  >
+  </shared-login>
+
+  <div *ngIf="errorMsj" class="text-danger">
+    Usuario o contraseña incorrectos.
+  </div>
+
+  <shared-succesfull-page *ngIf="!showLogin">
+  </shared-succesfull-page>
+
+</div>
+
+
