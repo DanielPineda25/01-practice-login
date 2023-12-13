@@ -16,5 +16,5 @@ import { LoginPageComponent } from './shared/pages/login-page/login-page.compone
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'login';
+
 }
